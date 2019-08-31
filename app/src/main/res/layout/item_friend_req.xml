@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/friend_item_view"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="15dp">
+
+  <FrameLayout
+      android:id="@+id/userimage_holder"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/userimage"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src="@drawable/default_user_art_g_2"
+          app:civ_border_color="@color/colorPrimaryy"
+          app:civ_border_width="0dp" />
+
+      <ProgressBar
+          android:visibility="gone"
+          android:id="@+id/progressBar"
+          android:indeterminate="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+  </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/timestamp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/userimage_holder"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Getting User..."
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huangyz0918:androidwm-light:0.1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f06a260805f4c332efe9d5cefc9eca5f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f06a260805f4c332efe9d5cefc9eca5f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.huangyz0918/androidwm-light/0.1.2/b264140f08dc31b709dddecbe35bd81c0d788de2/androidwm-light-0.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <androidx.cardview.widget.CardView
+           android:layout_margin="8dp"
+           app:cardUseCompatPadding="true"
+           android:layoutDirection="ltr"
+           android:padding="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:padding="6dp"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:padding="5dp"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackground"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:tint="#212121"
+                       android:padding="10dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/ic_history_black_24dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <LinearLayout
+                       android:layout_gravity="center"
+                       android:layout_marginStart="10dp"
+                       android:orientation="vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:text="Version"
+                           android:textColor="#212121"
+                           android:gravity="center_vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+
+                       <TextView
+                           android:id="@+id/version"
+                           android:text="1.2.4"
+                           android:gravity="center_vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/support"
+                   android:padding="5dp"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackground"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:tint="#212121"
+                       android:padding="10dp"
+                       android:src="@drawable/ic_favorite_border_black_24dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:textColor="#212121"
+                       android:layout_marginStart="10dp"
+                       android:text="Support Development"
+                       android:gravity="center_vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/github"
+                   android:padding="5dp"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackground"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:tint="#212121"
+                       android:padding="10dp"
+                       android:src="@drawable/ic_github"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:textColor="#212121"
+                       android:layout_marginStart="10dp"
+                       android:text="Fork on Github"
+                       android:gravity="center_vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/libraries"
+                   android:padding="5dp"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackground"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:tint="#212121"
+                       android:padding="10dp"
+                       android:src="@drawable/ic_github"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:textColor="#212121"
+                       android:layout_marginStart="10dp"
+                       android:text="Open Source Libraries"
+                       android:gravity="center_vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_margin="8dp"
+           app:cardUseCompatPadding="true"
+           android:layoutDirection="ltr"
+           android:padding="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:padding="6dp"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:text="Author"
+                   android:textColor="#212121"
+                   android:textSize="16sp"
+                   android:padding="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+               <LinearLayout
+                   android:padding="5dp"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackground"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:tint="#212121"
+                       android:padding="10dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/ic_person_outline_black_24dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                       <TextView
+                           android:text="Amsavarthan Lv"
+                           android:textColor="#212121"
+                           android:layout_marginStart="10dp"
+                           android:gravity="center_vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/website"
+                   android:padding="5dp"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackground"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:tint="#212121"
+                       android:padding="10dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/ic_public_black_24dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:text="Website"
+                       android:textColor="#212121"
+                       android:layout_marginStart="10dp"
+                       android:gravity="center_vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/email"
+                   android:padding="5dp"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackground"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:tint="#212121"
+                       android:padding="10dp"
+                       android:src="@drawable/ic_email_black_24dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <LinearLayout
+                       android:layout_gravity="center"
+                       android:layout_marginStart="10dp"
+                       android:orientation="vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:text="Send an email"
+                           android:textColor="#212121"
+                           android:gravity="center_vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+
+                       <TextView
+                           android:text="amsavarthan.a@gmail.com"
+                           android:gravity="center_vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:padding="5dp"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackground"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:tint="#212121"
+                       android:padding="10dp"
+                       android:layout_gravity="center"
+                       android:src="@mipmap/ic_notification"
+                       android:layout_width="42dp"
+                       android:layout_height="42dp"/>
+
+                   <LinearLayout
+                       android:layout_gravity="center"
+                       android:layout_marginStart="10dp"
+                       android:orientation="vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:text="Hify"
+                           android:textColor="#212121"
+                           android:gravity="center_vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+
+                       <TextView
+                           android:text="lvamsavarthan"
+                           android:gravity="center_vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/instagram"
+                   android:padding="5dp"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackground"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:tint="#212121"
+                       android:padding="10dp"
+                       android:src="@drawable/instagram"
+                       android:layout_width="44dp"
+                       android:layout_height="44dp"/>
+
+                   <LinearLayout
+                       android:layout_gravity="center"
+                       android:layout_marginStart="10dp"
+                       android:orientation="vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:text="Instagram"
+                           android:textColor="#212121"
+                           android:gravity="center_vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+
+                       <TextView
+                           android:text="lvamsavarthan"
+                           android:gravity="center_vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+   </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/image_holder"
+    android:background="#f7f7f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.nsromapa.frenzapp.newfy.ui.views.FrenzAppImageView
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"/>
+
+   <FrameLayout
+       android:id="@+id/like_layout"
+       android:layout_gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="360dp">
+
+       <View
+           android:id="@+id/vBgLike"
+           android:layout_gravity="center"
+           android:layout_width="360dp"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_like_circle_background"
+           android:visibility="invisible" />
+
+       <ImageView
+           android:id="@+id/ivLike"
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:tint="#FF1744"
+           android:layout_gravity="center"
+           android:src="@mipmap/heart"
+           android:visibility="invisible" />
+
+   </FrameLayout>
+
+</FrameLayout>

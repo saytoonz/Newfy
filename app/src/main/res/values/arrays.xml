@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items">
+        <item>Place Name</item>
+        <item>Address</item>
+        <item>LatLng</item>
+    </string-array>
+
+    <string-array name="subject" translatable="false">
+        <item>Accountancy</item>
+        <item>Astronomy</item>
+        <item>Biology</item>
+        <item>Business Maths</item>
+        <item>Computer Science</item>
+        <item>Commerce</item>
+        <item>Chemistry</item>
+        <item>Economics</item>
+        <item>Geography</item>
+        <item>History</item>
+        <item>Physics</item>
+        <item>Political Science</item>
+        <item>Maths</item>
+    </string-array>
+
+    <string-array name="colors_array">
+        <item>#f44336</item>
+        <item>#e91e63</item>
+        <item>#9c27b0</item>
+        <item>#673ab7</item>
+        <item>#3f51b5</item>
+        <item>#2196f3</item>
+        <item>#00897b</item>
+        <item>#4caf50</item>
+        <item>#ff5722</item>
+    </string-array>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Home</item>
+        <item>Chats</item>
+        <item>Flash Messages</item>
+        <item>Create Group</item>
+        <item>Create Channel</item>
+        <item>Convention</item>
+        <item>Manage Friends</item>
+        <item>Invite</item>
+        <item>Settings</item>
+        <item>About</item>
+        <item />
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_home_black</item>
+        <item>@drawable/ic_chat__24dp</item>
+        <item>@drawable/ic_flash_on_black_24dp</item>
+        <item>@drawable/ic_group_add</item>
+        <item>@drawable/ic_channel</item>
+        <item>@drawable/ic_forum_black_24dp</item>
+        <item>@drawable/ic_friend</item>
+        <item>@drawable/ic_invite</item>
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_about</item>
+        <item>0</item>
+        <item>@drawable/ic_exit_to_app_black_24dp</item>
+    </array>
+
+    <string-array name="details">
+        <item>Place Name</item>
+        <item>Address</item>
+        <item>LatLng</item>
+    </string-array>
+
+</resources>

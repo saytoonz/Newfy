@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.notification.NotificationActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            app:title="Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_above="@+id/message_layoutt"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:id="@+id/toolbar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_margin="10dp"
+               >
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/circleImageView"
+                   android:layout_width="48dp"
+                   android:layout_height="48dp"
+                   android:src="@drawable/default_user_art_g_2"
+                   app:civ_border_color="@color/colorPrimaryy"
+                   app:civ_border_width="0dp" />
+
+               <LinearLayout
+                   android:gravity="center_vertical"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:id="@+id/name"
+                       android:padding="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="#FF000000"
+                       />
+
+                   <TextView
+                       android:id="@+id/messagetxt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/textview_tab_style_black"
+                       android:padding="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_marginStart="10dp"
+                       android:textSize="17sp"
+                       android:textColor="#fff" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <ProgressBar
+               android:id="@+id/progressBar"
+               style="?android:attr/progressBarStyleHorizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:indeterminate="true"
+               android:visibility="gone" />
+
+       </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/message_layoutt"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/message_layout"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_toStartOf="@+id/currentProfile"
+                android:hint="Enter Message"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:padding="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/currentProfile"
+                android:layout_width="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/default_user_art_g_2"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/sendNew"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_height="wrap_content"
+                android:onClick="SendNew"
+                android:text="Send new"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/send"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_backgtound"
+                android:text="Reply"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

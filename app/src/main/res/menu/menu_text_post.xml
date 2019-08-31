@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nsromapa.frenzapp.newfy.ui.activities.MainActivity">
+
+
+    <item
+        android:id="@+id/action_post"
+        android:title="Post"
+        android:orderInCategory="200"
+        android:visible="true"
+        android:icon="@drawable/ic_send_black"
+        app:showAsAction="always" />
+
+</menu>

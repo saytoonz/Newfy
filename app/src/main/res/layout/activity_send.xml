@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryy"
+    tools:context=".ui.activities.friends.SendActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+   <ScrollView
+       android:layout_below="@id/top"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/card"
+               app:cardUseCompatPadding="true"
+               android:onClick="SelectImage"
+               app:cardCornerRadius="4dp"
+               android:layout_margin="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="350dp">
+
+               <FrameLayout
+                   android:id="@+id/imageLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   >
+
+                   <me.grantland.widget.AutofitTextView
+                       android:id="@+id/text"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:maxLines="4"
+                       android:paddingStart="10dp"
+                       android:paddingEnd="10dp"
+                       fontPath="fonts/bold.ttf"
+                       android:text="Click here to add an attachment"
+                       android:textColor="#212121"
+                       android:textSize="42sp"
+                       app:minTextSize="18dp"
+                       app:sizeToFit="true" />
+
+                   <ImageView
+                       android:id="@+id/imagePreview"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:onClick="PreviewImage"
+                       android:scaleType="centerCrop" />
+
+               </FrameLayout>
+
+
+           </androidx.cardview.widget.CardView>
+
+           <EditText
+               android:id="@+id/message"
+               android:layout_margin="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/input_backgtound_grey"
+               android:hint="Enter Message"
+               android:inputType="textCapSentences|textMultiLine"
+               android:paddingStart="20dp"
+               android:paddingEnd="12dp"
+               android:paddingTop="12dp"
+               android:paddingBottom="12dp"/>
+
+           <HorizontalScrollView
+               android:id="@+id/tabs"
+               android:scrollbars="none"
+               android:layout_marginBottom="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:id="@+id/options"
+                   android:padding="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/send"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/round_background"
+                       android:text=" Send message "
+                       android:padding="10dp"
+                       />
+
+
+                   <TextView
+                       android:id="@+id/location"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/round_background"
+                       android:onClick="shareLocation"
+                       android:visibility="gone"
+                       android:text=" Share location "
+                       android:padding="10dp"
+                       />
+
+                   <TextView
+                       android:id="@+id/remove"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/round_background"
+                       android:onClick="removeAttachment"
+                       android:visibility="gone"
+                       android:text=" Remove Attachment "
+                       android:padding="10dp"
+                       />
+
+
+               </LinearLayout>
+
+           </HorizontalScrollView>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

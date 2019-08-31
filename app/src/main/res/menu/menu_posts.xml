@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/alerter_ic_notifications"
+        android:title="Notifications"
+        app:actionLayout="@layout/custom_notification_icon"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_add_black"
+        android:title="Add Post"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_new_question"
+        android:icon="@drawable/ic_add_black"
+        android:title="Add Question"
+        app:showAsAction="ifRoom" />
+
+</menu>

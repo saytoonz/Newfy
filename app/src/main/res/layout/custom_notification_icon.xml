@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:clipToPadding="false"
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bell"
+        android:src="@drawable/alerter_ic_notifications"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/badge"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="3dp"
+        android:src="@color/colorAccentt"
+        android:layout_width="10dp"
+        android:visibility="gone"
+        android:layout_height="10dp" /-->
+
+    <TextView
+        android:id="@+id/badge"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right|end|top"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/badge_background"
+        android:gravity="center"
+        android:padding="3dp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:text="0"
+        android:textSize="10sp"/>
+
+
+</FrameLayout>

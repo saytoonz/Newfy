@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.smart-fun:XmlToJson:1.4.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/afd19d72ec843c875eae54eaed6adbaa/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/afd19d72ec843c875eae54eaed6adbaa/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.smart-fun/XmlToJson/1.4.4/b306dcf6dfa581340e53807c21421683bdea91ec/XmlToJson-1.4.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

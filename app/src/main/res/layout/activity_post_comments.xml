@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="Comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/post"
+        android:padding="10dp"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/comment_admin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_user_art_g_2" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:id="@+id/comment_post_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#212121" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/post"
+        android:id="@+id/divider"
+        android:layout_marginBottom="5dp"
+        android:background="#777777"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+  <FrameLayout
+      android:layout_marginBottom="5dp"
+      android:layout_below="@+id/divider"
+      android:layout_above="@+id/comment_section"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <ProgressBar
+          android:layout_gravity="center"
+          android:id="@+id/progressBar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:indeterminate="true"
+          android:visibility="visible" />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+  </FrameLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/comment_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_toStartOf="@+id/send"
+            android:layout_width="match_parent"
+            android:hint="Add a comment"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/send"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:icon="@drawable/ic_send_white_24dp"
+            android:background="@drawable/input_backgtound"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:text=" Send"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:textColor="#FFF" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

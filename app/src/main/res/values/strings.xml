@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="Welcome_message">Welcome to Hify</string>
+    <string name="register_message">Create a new Account</string>
+    <string name="loading_name">Loading Name...</string>
+
+    <!--maps api key-->
+    <string name="api_key">AIzaSyCJ7pGLnoyTiBF8_2tr6oKA0wzeKzR0FcY</string>
+
+    <string name="default_notification_channel_id">@string/app_name</string>
+    <string name="loading_message">Getting Message..</string>
+    <string name="verify_your_mobile">Verify your Mobile</string>
+    <string name="title_1">Title</string>
+    <string name="text_1">Text</string>
+    <string name="messages">Messages</string>
+    <string name="friends">Friends</string>
+    <string name="profile">My Profile</string>
+    <string name="posts">Posts</string>
+    <string name="action_remove">Unfriend</string>
+    <string name="transition_name">logo_transition</string>
+    <string name="extras">Extras</string>
+
+    <!-- app. -->
+    <string name="package_name">com.amsavarthan.social.hify</string>
+    <string name="version_code">v.beta8</string>
+
+    <string name="title_activity_about_us">About_us</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="web_url">https://lvamsavarthan.github.io/lvstore</string>
+
+    <string name="action_panorama">Show panorama</string>
+    <string name="loading_failed">Loading failed. :-(</string>
+    <string name="try_again">Try again</string>
+    <string name="app_name_world">OurStreets</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="default_bio">Hey there, I am a Hify user.</string>
+    <string name="username">\@username</string>
+    <string name="dummy_location">Getting location</string>
+    <string name="loading_username">\@loading...</string>
+    <string name="author_name">Amsavarthan Lv</string>
+    <string name="select_from_gallery">Select from gallery</string>
+    <string name="click_on_the_button_below_to_select_image_s">Click on the button below to select image(s)</string>
+    <string name="insert_image_s">Insert Image(s)</string>
+    <string name="s_people_have_smiled_for_this_post">%d people liked this post</string>
+    <string name="s_people_have_saved_this_post">%d people have saved this post</string>
+    <string name="you_have_d_new_friend_request_s">You have %d new friend request(s)</string>
+
+
+</resources>

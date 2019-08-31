@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryy</item>
+        <item name="android:windowBackground">@color/colorPrimaryy</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkk</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+    </style>
+
+
+    <style name="LoginAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryy</item>
+        <item name="android:windowBackground">@color/colorPrimaryy</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkk</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+    </style>
+
+    <style name="UpdateAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryy</item>
+        <item name="android:windowBackground">@color/colorPrimaryy</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkk</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+    </style>
+
+    <style name="SplashAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryy</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkk</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="android:windowBackground">@drawable/splash_window_bg</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+    </style>
+
+    <style name="AppThemeTransparent" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+    </style>
+</resources>

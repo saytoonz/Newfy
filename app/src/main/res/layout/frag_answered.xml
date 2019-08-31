@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.AllQuestions">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/tabs"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/options"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filter by subjects :"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:text="    All    "
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/accountancy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:text=" Accountancy "
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/astronomy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:textColor="@color/white"
+                    android:text=" Astronomy "
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/biology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_background"
+                    android:text=" Biology "
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/business_maths"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:text=" Business Maths "
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/computer_science"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_background"
+                    android:text=" Computer Science "
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/commerce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_background"
+                    android:text=" Commerce "
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/chemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_background"
+                    android:text=" Chemistry "
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/economics"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:text=" Economics "
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/geography"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:text=" Geography "
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:text=" History "
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/physics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:textColor="@color/white"
+                    android:text=" Physics "
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/p_science"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:text=" Political Science "
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/maths"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:text=" Maths "
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    />
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/default_item"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    >
+
+                    <ImageView
+                        android:tint="#FFCA28"
+                        android:layout_marginBottom="5dp"
+                        app:srcCompat="@drawable/ic_question_answer_black_24dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/default_title"
+                        fontPath="fonts/GoogleSans_Bold.ttf"
+                        android:textSize="19sp"
+                        android:gravity="center"
+                        android:textColor="#313131"
+                        android:text="No questions yet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+
+                    <TextView
+                        android:id="@+id/default_text"
+                        android:gravity="center"
+                        android:text="All your question appear here"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nsromapa.frenzapp.newfy">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name="com.nsromapa.frenzapp.newfy.ui.activities.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashAppTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccentt" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.account.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.account.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.friends.SendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.account.Notifications"
+            android:screenOrientation="portrait"
+            />
+        <service
+            android:name="com.nsromapa.frenzapp.newfy.receivers.FCMService"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.notification.NotificationActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.nsromapa.frenzapp.TARGETNOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.notification.NotificationReplyActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nsromapa.frenzapp.TARGETNOTIFICATIONREPLY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.notification.ImagePreviewSave"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginAppTheme" />
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.notification.ImagePreview"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginAppTheme" />
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.notification.NotificationImage"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nsromapa.frenzapp.TARGETNOTIFICATION_IMAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.notification.NotificationImageReply"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nsromapa.frenzapp.TARGETNOTIFICATIONREPLY_IMAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.friends.SearchUsersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.post.PostText"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.post.CommentsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.nsromapa.frenzapp.TARGET_COMMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.post.PostImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.friends.FriendProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.nsromapa.frenzapp.TARGET_FRIENDREQUEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.account.UpdateAvailable"
+            android:screenOrientation="portrait"
+            android:theme="@style/UpdateAppTheme">
+            <intent-filter>
+                <action android:name="com.nsromapa.frenzapp.TARGET_UPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.post.SinglePostView"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nsromapa.frenzapp.TARGET_LIKE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.forum.AddQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsromapa.frenzapp.newfy.ui.activities.forum.AnswersActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nsromapa.frenzapp.TARGET_FORUM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nsromapa.frenzapp.newfy.ui.activities.SendMessage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.nsromapa.frenzapp.newfy.ui.activities.lottie.FestivalActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.nsromapa.frenzapp.TARGET_FESTIVAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.nsromapa.frenzapp.newfy.service.UploadService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service android:name="com.nsromapa.frenzapp.newfy.service.MessageService"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+
+</manifest>

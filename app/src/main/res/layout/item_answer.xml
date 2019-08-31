@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/up"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="40dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/default_user_art_g_2"
+            android:layout_gravity="center_vertical"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/answer"
+                android:textSize="20sp"
+                android:textColor="#212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="#818181"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <FrameLayout
+        android:id="@+id/bottom"
+        android:background="@color/black_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_gravity="start|center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/ic_delete_white_24dp"
+            android:visibility="gone"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/unmrk_ans"
+            android:layout_gravity="end|center_vertical"
+            android:padding="10dp"
+            android:text="Unmark as Answer"
+            android:visibility="gone"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/mrk_ans"
+            android:layout_gravity="end|center_vertical"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="#fff"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="Mark as Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

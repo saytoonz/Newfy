@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/default_user_art_g_2"
+                app:civ_border_color="@color/colorPrimaryy"
+                app:civ_border_width="0dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="#212121"
+                android:text="Getting name..."
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:text="Getting username..."
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:drawablePadding="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/ic_location_on_black_24dp"
+                android:gravity="center_vertical"
+                android:textColor="#212121"
+                />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:gravity="center_vertical"
+                android:textColor="#212121"
+                />
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_below="@+id/email"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/friend_sent"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textSize="17sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/friend_no"
+                    android:text="Send Friend Request"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/friend_yes"
+                    android:text="Unfriend"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/friend_req"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/accept"
+                        android:text="Accept"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/decline"
+                        android:text="Decline"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bio_card"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?selectableItemBackground"
+                android:layout_below="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:text="User Bio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/bio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Getting user bio..."
+                        android:gravity="center_horizontal"
+                        android:textColor="#212121"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/account_card"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?selectableItemBackground"
+                android:layout_below="@+id/bio_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:text="Account Details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/friends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Getting friends count..."
+                        android:drawableLeft="@drawable/ic_mutual"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_mutual"
+                        android:gravity="center_vertical"
+                        android:textColor="#212121"
+                        />
+
+                    <TextView
+                        android:id="@+id/posts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Getting posts count..."
+                        android:drawableLeft="@drawable/posts_icon"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/posts_icon"
+                        android:gravity="center_vertical"
+                        android:textColor="#212121"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

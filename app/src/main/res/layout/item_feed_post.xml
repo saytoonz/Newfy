@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
+    app:cardElevation="0dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/post_user_image"
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/post_user_image"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/post_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#212121"
+                    android:textSize="17sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/delete_button"
+                    android:id="@+id/post_timestamp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/post_username"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingPrefix" />
+
+                <ImageView
+                    android:id="@+id/delete_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_delete_forever_black_24dp"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/image_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/pager_layout"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="360dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager"
+                    android:background="@color/colorPrimaryy"
+                    android:layout_gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:id="@+id/indicator_holder"
+                    android:background="#20000000"
+                    android:layout_gravity="bottom"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        app:dotsColor="@color/white"
+                        app:dotsCornerRadius="8dp"
+                        app:dotsSize="6dp"
+                        app:dotsSpacing="4dp"
+                        app:dotsWidthFactor="2.5"
+                        />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/post_text"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:gravity="center"
+                android:maxLines="4"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#FFF"
+                android:textSize="52sp"
+                android:visibility="invisible"
+                app:minTextSize="18dp"
+                app:sizeToFit="true" />
+
+            <View
+                android:id="@+id/vBgLike"
+                android:layout_gravity="center"
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:background="@drawable/bg_like_circle_background"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivLike"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:tint="#FF1744"
+                android:layout_gravity="center"
+                android:src="@mipmap/heart"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/post_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#212121"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/react_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:id="@+id/like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:mfb_not_favorite_image="@drawable/ic_favorite_border_black_24dp"
+                app:mfb_favorite_image="@drawable/ic_favorite_red_24dp"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="17sp"
+                android:id="@+id/like_count"
+                android:layout_toEndOf="@id/like_button"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxLines="6"
+                android:textColor="#212121"
+                android:layout_height="wrap_content" />
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:id="@+id/comment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/like_count"
+                app:mfb_favorite_image="@drawable/ic_comment_liked"
+                app:mfb_not_favorite_image="@drawable/ic_comment_liked"
+                />
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:id="@+id/stat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/comment_button"
+                app:mfb_favorite_image="@drawable/ic_show_chart_24dp"
+                app:mfb_not_favorite_image="@drawable/ic_show_chart_24dp"
+                />
+
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:id="@+id/save_button"
+                android:layout_toStartOf="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:mfb_not_favorite_image="@drawable/ic_bookmark_border_black_24dp"
+                app:mfb_favorite_image="@drawable/ic_bookmark_black_24dp"
+                />
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                app:mfb_favorite_image="@drawable/ic_share_liked"
+                app:mfb_not_favorite_image="@drawable/ic_share_liked"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

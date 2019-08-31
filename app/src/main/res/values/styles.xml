@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryy</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkk</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="android:windowBackground">@color/colorPrimaryy</item>
+    </style>
+
+    <style name="BottomNavigationBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorAccentt</item>
+        <item name="colorPrimaryDark">@color/colorAccentt</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+    </style>
+
+    <style name="LoginAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryy</item>
+        <item name="android:windowBackground">@color/colorPrimaryy</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkk</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+    </style>
+
+    <style name="UpdateAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryy</item>
+        <item name="android:windowBackground">@color/colorPrimaryy</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkk</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="SplashAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryy</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkk</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="android:windowBackground">@drawable/splash_window_bg</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+    </style>
+
+</resources>

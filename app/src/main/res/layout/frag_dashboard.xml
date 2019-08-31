@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_above="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:theme="@style/BottomNavigationBarTheme"
+            app:menu="@menu/menu_dashboard"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/friend_req_alert"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardMaxElevation="13dp"
+        app:cardElevation="7dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorAccentt"
+        android:foreground="?selectableItemBackground"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/friend_req_alert_text"
+            android:padding="16dp"
+            android:textColor="#FFF"
+            android:text="@string/you_have_d_new_friend_request_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
